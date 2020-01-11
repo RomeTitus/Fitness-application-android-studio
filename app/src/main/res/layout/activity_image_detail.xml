@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="36sp"
+        tools:text="Date" />
+
+    <TextView
+        android:id="@+id/TxtDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inser Date"
+        tools:text="Inser Date" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Steps"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/TxtSteps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inset Steps Here" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Weight"
+        android:textSize="36sp"
+        tools:text="Weight" />
+
+    <TextView
+        android:id="@+id/TxtWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insert Weight Here"
+        tools:text="Insert Weight Here" />
+
+    <ImageView
+        android:id="@+id/ImgUser"
+        android:layout_width="189dp"
+        android:layout_height="169dp"
+        app:srcCompat="@drawable/login_charicter" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="0"
+        android:background="@android:color/darker_gray" />
+
+</LinearLayout>

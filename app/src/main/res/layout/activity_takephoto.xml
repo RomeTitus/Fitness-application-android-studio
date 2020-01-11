@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center|top"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutExersice"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/camera" />
+
+        <Button
+            android:id="@+id/BtnTakePhoto"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:text="Take Photo"
+            tools:text="Take Photo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Photo Today"
+                android:textSize="36sp"
+                tools:text="Your Photo Today" />
+
+            <ImageView
+                android:id="@+id/ImgCurrentPhoto"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                tools:srcCompat="@tools:sample/avatars[0]" />
+
+            <Button
+                android:id="@+id/BtnViewHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View History"
+                tools:text="View History" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

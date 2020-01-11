@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+    <item
+        android:id="@+id/stepsDisplay"
+        android:enabled="true"
+        android:icon="@drawable/ic_walking"
+        android:title="Steps"
+        app:showAsAction="ifRoom"
+    />
+
+    <item
+        android:id="@+id/weightDisplay"
+        android:enabled="true"
+        android:icon="@drawable/ic_weight"
+        android:title="Weight"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/cameraDisplay"
+        android:enabled="true"
+        android:icon="@drawable/ic_camera"
+        android:title="Camera"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/goalDisplay"
+        android:enabled="true"
+        android:icon="@drawable/ic_goal"
+        android:title="Goals"
+        app:showAsAction="ifRoom"
+        />
+</menu>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".camera">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ImageViewPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="500dp"
+                android:contentDescription="TODO" />
+
+            <Button
+                android:id="@+id/BtnSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                tools:text="Save" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/BtnRetake"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Retake"
+                tools:text="Retake" />
+
+            <Button
+                android:id="@+id/BtnBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@android:string/cancel"
+                tools:text="Cancel" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

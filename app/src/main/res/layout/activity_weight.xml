@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal|fill"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/IntakeCalorieslinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/WeightLimitPie"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:layout_marginEnd="0dp">
+
+        </com.github.mikephil.charting.charts.PieChart>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/SubmitCalorieslinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp">
+
+        <TextView
+            android:id="@+id/txtRecordGoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Lets Record Your Weight"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Please use the slider "
+            tools:text="Please use the slider " />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="262dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="1400"
+            android:progress="3" />
+
+        <TextView
+            android:id="@+id/txtCalories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="400"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/BtnSubmitWight"
+            android:layout_width="158dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Submit" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="0"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMI INDEX"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"
+            android:text="Body mass index is the measurement of body fat based on height and weight" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="25sp"
+            android:text="If your BMI is between 18.5 and 24.9: you're in the healthy weight range." />
+
+        <TextView
+            android:id="@+id/TxtViewBMI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="InsertBMI"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

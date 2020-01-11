@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/slidelinearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center|top"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/PieLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/StepPie"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:layout_marginEnd="0dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Steps Done"
+                android:textSize="30sp"
+                tools:text="Steps Done" />
+
+            <TextView
+                android:id="@+id/TxtStepsDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="400"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                tools:text="400" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="25dp"
+        android:paddingTop="25dp"
+        android:paddingRight="25dp"
+        android:visibility="visible">
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/LineChartDiagram"
+            android:layout_width="match_parent"
+            android:layout_height="316dp">
+
+        </com.github.mikephil.charting.charts.LineChart>
+
+        <TextView
+            android:id="@+id/TxtWeNeedMoreDays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We need more days to create this graph"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>
